@@ -1,0 +1,49 @@
+
+<html>
+<head><title>Form</title></head>
+<body>
+<h3>Name- Avika Shukla<br>
+Reg no- 20BCE10859</h3>
+<br><br>
+<center>
+<script>
+function submitted()
+{
+alert('you have submitted the form')
+}
+</script>
+<form>
+<label type="text">First Name</label>
+<input type="text"><br><br>
+<label type="text">Last Name</label>
+<input type="text"><br><br>
+<label type="number">Phone
+</label>
+<input type="number"><br><br>
+<label type="text">Password</label>
+<input type="password"><br><br>
+<label type="text">Address</label>
+<input type="text"><br>
+<br><br>
+<button type="reset">Reset</button>
+<button onclick="submitted()">Submit</button>
+</form>
+<script>
+function GuessNumber()
+{
+const random=Math.floor(Math.random()*10)+1;
+let number=parseInt(prompt('Guess a number'));
+while(number!=random)
+{
+number=parseInt(prompt('Guess a number'));
+}
+while(number==random)
+{
+alert('You guessed the right number');
+break;
+}
+}
+</script><br><br><br>
+<button onclick="GuessNumber()">Click to guess the number</button>
+</body>
+</html>
